@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Bhaltike | Applications & Events | Form</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="bhaltike, bhaltike tawkanoa, bhaltike potakot"/>
+        <meta name="description" content="mon monk university, mon university, ramanyanikaya, english course for monk."/>
+        <link rel="icon" href="img/start_logo.png" type="img/png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="css/studentform.css" rel="stylesheet" type="text/css" />
+        
+        
+
+    </head>
+    <body>
+     <!-- nav bar start -->
+    <div class="top-menu">
+        <div class="top-left-menu">
+            <img src="img/start_logo.png" alt=""/>
+            <h2>Bhaltike</h2>
+        </div>
+        <div class="top-right-menu">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="news.html">Applications & Events</a>
+            <a href="activity.html">Activities</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="studentform.html"><button class="for-active">Apply</button></a>
+        </div>
+        <div class="hamburgerLine">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+        </div>
+        <div class="overlayMenu">
+            <ul>
+                <li id="litag"><a  class="for-a-menu" href="index.html">Home</a></li>
+                <li id="litag"><a class="for-a-menu" href="about_us.html">About Us</a></li>
+                <li id="litag"><a class="for-a-menu" href="news.html" >Applications & Events</a></li>
+                <li id="litag"><a class="for-a-menu" href="activity.html" >Activities</a></li>
+                <li id="litag"><a class="for-a-menu" href="contactus.html">Contact Us</a></li>
+                <li id="litag"><div class="overlayMenu_btn">
+                    <a  href="studentform.html"><button class="for-active">Apply</button></a>
+                </div></li>
+            </ul>
+        </div>
+        
+        
+    </div>
+    <!-- nav bar end -->
+    
+   <!-- start registration form -->
+   
+    <div class="form-container">
+        <div class="for-background"></div>
+        <form action="" method="post" class="container maincontainer">
+
+            <h3>Student Regestration Form</h3>
+            <div class="form-floating">
+                <input type="text" class="form-control mb-4 form-control-warn full_name" placeholder="Enter your Name"/>
+                <label>Your name</label>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control mb-4 father_name" placeholder="Enter your father name"/>
+                <label>Father name</label>
+            </div>
+            
+            <select class="form-select mb-4 educationcontainer edu_bg">
+                <option selected disabled class="first">Education background</option>
+                <option value="Middle School">Middle School</option>
+                <option value="Hight School">Hight School</option>
+                <option value="University">University</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="form-floating">
+                <input type="text" class="form-control mb-4 form-control-warn address" placeholder="Enter your Name"/>
+                <label>Address</label>
+            </div>
+            
+            <div class="birthdaycontainer mb-4">
+                <div class="form-text forlabel">Date of Birth</div>
+                <input type="date" id="birthday" name="birthday" placeholder="dd-mm-yyyy" class="birthdate"/>
+            </div>
+            
+            <div class="form-floating">
+                <input type="email" class="form-control mb-4 form-control-warn from_email" placeholder="Contact Email"/>
+                <label>Contact Email</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="number" class="form-control mb-4 form-control-warn phone_no" placeholder="Contact Number" onKeyPress="if(this.value.length==11) return false;" />
+                <label>Contact Number</label>
+            </div>
+
+            <div class="gendercontainer mb-4">
+                <div class="form-text mb-2">Gender</div> 
+                    <div class="form-check">
+                        <input class="form-check-input gender" type="radio" name="gender" value="Male" id="gender">
+                        <label class="form-check-label" for="gender">
+                        Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input sex gender" type="radio" name="gender" value="Female" checked>
+                        <label class="form-check-label sex">
+                        Female
+                        </label>
+                    </div>
+            </div>
+            
+            <select class="form-select mb-4 coursecontainer course">
+                <option selected disabled class="first">Courses</option>
+                <option>Computer Science</option>
+                
+            </select>   
+            <button type="submit" class="submit" name="submit">Send</button>
+        </form>
+    </div>
+    <div id="overlay-submit">
+        <h2 class="coursetext"></h2>
+        <p>Your regestration has been sumitted.We will inform you soon.</p>
+    </div>
+<!--end registration form  -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="foot-logo">
+            <img src="img/barlogo.png" alt="logo" />
+            <h2>Bhaltikepitakotmon</h2>
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <div class="contact-div">
+                <div class="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                   <span>Rajadhiraj Road, Kwan Tokano, Teasa Takohkhamine.</span>
+                </div>
+                <div class="contact-number">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>
+                        09787222285 
+                    </span>
+                </div>
+                <div class="contact-email">
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        bhaltike2022@gmail.com
+                    </span>
+                </div>
+            </div>
+            <div class="icon"> 
+                    <a href="https://www.facebook.com/bartheikpitakotmon"><i class="fab fa-facebook" style="font-size:30px"></i></a>
+                    <a href="https://www.youtube.com/channel/UC8Tpe6zT0gVftLju0GFnKEw"><i class="fab fa-youtube" style="font-size:30px"></i></a>
+                    <a href="https://www.instagram.com/bhaattuikpittkttmn/"><i class="fab fa-instagram" style="font-size:30px"></i></a>
+                    <a href="tel:09787222285"><i class="fas fa-phone-alt" style="font-size:30px"></i></a>
+                    <a href="mailto:bhaltike2022@gmail.com"><i class="far fa-envelope" style="font-size:30px"></i></a>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.9254539606734!2d97.49376796798802!3d16.454254731385735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a1f23308d949%3A0x2499a70584e64a3d!2z4YCY4YCs4YCQ4YCt4YCv4YCA4YC6IOGAgOGAveGArOGAlOGAuuGAkOGAneGAuuGAgOGBnuGAtA!5e0!3m2!1sen!2sfr!4v1632717627826!5m2!1sen!2sfr"
+                width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <!-- footer end -->
+            <div class="copyright">
+                <small>Copyright &copy; Bhaltike 2022. All Rights Reserved.<br/>By <a href="#">Nano Space</a></small>
+            </div>
+            <script src="js/script.js"></script>
+            <script src="js/studentform.js"></script>
+            
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+            (function() {
+            emailjs.init("user_s5sRWf69LzggyKWbccxit");
+            })();
+            </script>
+
+    
+    </body>
+</html>
